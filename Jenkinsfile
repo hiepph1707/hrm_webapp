@@ -4,7 +4,7 @@ pipeline {
     //agent {label 'master'}
     
     environment {
-        PASS = credentials('registry-pass') 
+        PASS = credentials('sgb-hub-pass') 
     }
     
     parameters {
