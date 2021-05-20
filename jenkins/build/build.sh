@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copy source code to the build location
-cp -ar webapp/* jenkins/build/
+cp -arv webapp/* jenkins/build/
 
 echo "****************************"
 echo "** Building Docker Image ***"
