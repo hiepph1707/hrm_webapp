@@ -1,0 +1,261 @@
+
+a {
+    color: var(--text-color);
+}
+
+#timekeeping {
+    margin: auto;
+}
+
+#timekeeping-container {
+    display: flex;
+    margin: 0px;
+    height: 100%;
+}
+
+#timekeeping-menu {
+    background-color: var(--primary-color);
+    width: 360px;
+    padding: 0px 8px;
+}
+
+.timekeeping-menu-enable {
+    display: none;
+}
+
+/* --- */
+#timekeeping-menu1 {
+    width: 80px;
+    background-color: var(--primary-color);
+}
+
+.timekeeping-menu1-disable {
+    display: none;
+}
+
+.timekeeping-menu1-header {
+    margin-bottom: 12px;
+}
+
+.timekeeping-menu1-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timekeeping-menu1-icon {
+    color: var(--text-color);
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.timekeeping-menu1-detail {
+    color: var(--text-color);
+    margin: 10px 0px;
+    display: block;
+}
+
+.timekeeping-menu1-detail-icon {
+    font-size: 1.4rem;
+}
+/* --- */
+
+
+.timekeeping-menu-header {
+    margin-bottom: 12px;
+}
+
+.timekeeping-menu-icon {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.timekeeping-menu-user {
+    color: var(--text-color);
+    text-align: center;
+}
+/* -------------- */
+
+.timekeeping-menu-detail {
+    color: var(--text-color);
+    margin: 10px 0px;
+    display: block;
+}
+
+.timekeeping-menu-detail-icon {
+    margin-right: 8px;
+}
+/* -------------- */
+
+#timekeeping-detail {
+    padding: 0px;
+    width: 100%;
+}
+
+.timekeeping-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 6px 12px 0px;
+}
+
+.timekeeping-detail-header-left {
+    display: flex;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.timekeeping-detail-header-left-icon-1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    text-align: center;
+    margin: auto;
+}
+
+.timekeeping-detail-header-left-icon-1:hover {
+    cursor: pointer;
+    color: #BB8FCE;
+}
+
+.timekeeping-detail-header-left-icon-2 {
+    font-size: 1.5rem;
+    color: var(--primary-color-1);
+    margin: 0 6px;
+    text-align: center;
+}
+
+.timekeeping-detail-header-left-text {
+    font-size: 1.5rem;
+    font-weight: 430;
+    text-align: center;
+}
+/* ----------------------------------- */
+
+.timekeeping-detail-header-right {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    color:#696969;
+}
+
+.timekeeping-detail-header-right-logo {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.timekeeping-detail-header-right-icon {
+    margin-right: 4px;
+}
+
+.timekeeping-detail-header-right-singout {
+    display: flex;
+    align-items: center;
+}
+.timekeeping-detail-header-right-singout:hover {
+    cursor: pointer;
+    color: #E74C3C;
+}
+/* ------------------------------------ */
+
+.timekeeping-detail-tool {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--tool-color);
+    padding: 10px 12px;
+    align-items: center;
+}
+
+.timekeeping-detail-tool-left {
+    display: flex;
+    align-items: center;
+}
+
+/* .timekeeping-detail-tool-left-text {
+
+} */
+
+.timekeeping-detail-tool-left-date {
+    margin: 0px 6px;
+    display: flex;
+}
+
+.timekeeping-detail-tool-left-date-input {
+    width: 100px;
+    padding-left: 4px;
+    border: 1px solid #99A3A4;
+    border-radius: 2px;
+}
+
+.timekeeping-detail-tool-left-date-icon {
+    margin-left: 6px;
+    font-size: 1.6rem;
+}
+
+.btn-search {
+    background-color: var(--primary-color);
+    width: 8rem;
+    height: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-search:hover {
+    color: var(--primary-color-1);
+    background-color: #3498DB;
+}
+
+.btn-search-icon {
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.timekeeping-detail-tool-right {
+    background-color: #ffffff;
+    border: 1px solid #99A3A4;
+    padding-left: 4px;
+    border-radius: 3px;
+}
+
+#search-input {
+    border: none;
+}
+
+/* --- */
+.timekeeping-detail-body {
+    padding: 10px 12px;
+}
+
+/* Datable timekeeping */
+.data-table-extensions > .data-table-extensions-filter{
+    display: flex;
+    align-items: center;
+    float:right !important;
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+}
+
+.data-table-extensions > .data-table-extensions-filter > .icon{
+    margin-bottom: 0px !important;
+}
+
+.iiIynX {
+    line-height: initial !important;
+}
+
+
+/* .gydTdW {
+    min-width: 150px !important;
+}
+
+.ipGuUx {
+    padding: 0 6px !important;
+}
+
+.iDzGLV {
+    padding: 0 6px !important;
+} */
