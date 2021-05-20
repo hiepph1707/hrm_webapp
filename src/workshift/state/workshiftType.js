@@ -1,1 +1,0 @@
-export const GET_WORK_SHIFT = "GET_WORK_SHIFT"
