@@ -1,8 +1,8 @@
 version: '3'
 services:
   nodejs:
-    image: hiepph1707/nodejs-project:dev
-    container_name: nodejs-app
+    image: $IMAGE:DEPLOY_TAG
+    container_name: hrm-webapp
     ports:
       - 3000:3000
     restart: unless-stopped

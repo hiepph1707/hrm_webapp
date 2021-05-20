@@ -4,11 +4,12 @@ echo "********************"
 echo "** Pushing image ***"
 echo "********************"
 
-IMAGE="nodejs-project"
+IMAGE="hrm-webapp"
+DOCKER_REGISTRY="hub.saigonbpo.vn"
 
 echo "** Logging in ***"
-docker login -u hiepph1707 -p $PASS
+docker login $DOCKER_REGISTRY -u hiepph -p $PASS
 echo "*** Tagging image ***"
-docker tag $IMAGE:$DEPLOY_TAG hiepph1707/$IMAGE:$DEPLOY_TAG
+docker tag $IMAGE:$DEPLOY_TAG $DOCKER_REGISTRY/img_sgb/$IMAGE:$DEPLOY_TAG
 echo "*** Pushing image ***"
-docker push hiepph1707/$IMAGE:$DEPLOY_TAG
+docker push $DOCKER_REGISTRY/img_sgb/$IMAGE:$DEPLOY_TAG
