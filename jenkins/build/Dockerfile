@@ -1,6 +1,6 @@
 FROM node:12
 WORKDIR /app
-ADD * /app/
+ADD * public src /app/
 RUN npm cache clean --force
 RUN rm -rf package-lock.json
 RUN npm install
