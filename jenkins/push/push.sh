@@ -4,7 +4,7 @@ echo "********************"
 echo "** Pushing image ***"
 echo "********************"
 
-IMAGE="hrm-webapp"
+IMAGE="nginx-hrm-webapp"
 DOCKER_REGISTRY="hub.saigonbpo.vn"
 
 echo "** Logging in ***"
