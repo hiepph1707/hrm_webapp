@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: "nginx-hrm-webapp:$DEPLOY_TAG"
+    image: "hrm-webapp:$DEPLOY_TAG"
     build:
       context: .
       dockerfile: Dockerfile
