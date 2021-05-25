@@ -35,7 +35,7 @@ pipeline {
         stage('Deploy to UAT') {
             when {
                 branch 'dev' 
-	        }
+	    }
             agent {label 'ho-srv-chat-dev'}
             steps {
                 echo "****** Deploy to ${BRANCH_NAME} branch ******"
@@ -45,8 +45,8 @@ pipeline {
 
         stage('Deploy to Production') {
             when {
-                branch 'master' 
-	        }
+                branch 'main' 
+	    }
             agent {label 'master'}
             steps {
                 echo "****** Deploy to ${BRANCH_NAME} branch ******"
