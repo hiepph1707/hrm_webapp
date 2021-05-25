@@ -4,12 +4,14 @@ pipeline {
     //agent {label 'master'}
     
     environment {
-        PASS = credentials('sgb-hub-pass') 
+        PASS = credentials('sgb-hub-pass')
+	    APP_VERSION = "${BUILD_ID}"
+        APP_ENV = "${BRANCH_NAME}"
     }
     
-    parameters {
-        choice(name: 'DEPLOY_TAG', choices: ['dev', 'prod'], description: 'Deploy Environment')
-    }
+    // parameters {
+    //     choice(name: 'DEPLOY_TAG', choices: ['dev', 'prod'], description: 'Deploy Environment')
+    // }
 
     stages {
 
@@ -17,7 +19,7 @@ pipeline {
             agent {label 'master'}
             steps {
                 sh '''
-                    ./jenkins/build/build.sh $DEPLOY_TAG
+                    ./jenkins/build/build.sh $
                 '''
             }
 
@@ -30,9 +32,24 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Deploy to UAT') {
+            when {
+                branch 'dev' 
+	        }
             agent {label 'ho-srv-chat-dev'}
             steps {
+                echo "****** Deploy to ${BRANCH_NAME} branch ******"
+                sh './jenkins/deploy/deploy.sh'
+            }
+        }
+
+        stage('Deploy to Production') {
+            when {
+                branch 'master' 
+	        }
+            agent {label 'master'}
+            steps {
+                echo "****** Deploy to ${BRANCH_NAME} branch ******"
                 sh './jenkins/deploy/deploy.sh'
             }
         }
